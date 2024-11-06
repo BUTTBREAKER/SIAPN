@@ -11,10 +11,11 @@ final readonly class LoginController
 
   function showLogin(): void
   {
-    App::renderPage('login', 'Iniciar sesión');
+    App::renderPage('login', 'Iniciar sesión', 'login-layout');
   }
 
-  function handleCredentials(): void {
+  function handleCredentials(): void
+  {
     $credentials = App::request()->data;
 
     dd(compact('credentials'));

@@ -8,9 +8,8 @@ final readonly class EnsureUserIsNotLoggedMiddleware
 {
   function before(): void
   {
-    dd('here');
     if (key_exists('loggedUserId', $_SESSION)) {
-      App::redirect('/');
+      App::redirect('/app');
     }
   }
 }
