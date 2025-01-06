@@ -1,0 +1,22 @@
+Sistema:
+1. Configuración Inicial
+  ☐ Actualizar Base de Datos: Implementar las tablas necesarias para gestionar sucursales, transferencias y chat.
+  ☐ Configurar Conexión a MySQL: Asegurar que todas las funcionalidades interactúen con la base de datos correctamente.
+2. Inventario y Sucursales
+  ☐   Inventario por Sucursal: Crear una vista para cada sucursal con su stock actual.
+  ☐  Transferencias entre Sucursales: Implementar el módulo de solicitudes y envíos de productos.
+3. Producción y Recetas
+  ☐ Gestión de Recetas: Completar la funcionalidad para registrar y ajustar recetas.
+  ☐ Tandas de Producción: Implementar la lógica para calcular insumos basados en recetas y predicciones.
+4. Predicciones y Sugerencias
+ ☐ Predicciones de Ventas: Calcular ventas futuras basadas en datos históricos.
+ ☐ Sugerencias Automáticas: Informar las cantidades de insumos necesarios según las predicciones.
+5. Ventas y Reportes
+ ☐ Gestión de Ventas: Registrar ventas y métodos de pago.
+ ☐ Generación de Reportes: Crear informes dinámicos para ventas, inventarios y transferencias.
+6. Comunicación Interna
+ ☐ Chat entre Sucursales: Implementar un sistema básico de mensajería en tiempo real.
+7. Página de Pedidos en Línea
+ ☐ Frontend para Pedidos: Crear una interfaz para que los clientes puedan realizar pedidos.
+ ☐ Integración con Backend: Registrar pedidos en la base de datos y notificar a las sucursales.
+
