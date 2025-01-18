@@ -7,16 +7,30 @@
   <title>SIPAN</title>
   <base href="<?= str_replace('index.php', '', $_SERVER['SCRIPT_NAME']) ?>" />
   <link rel="icon" href="./assets/img/favicon.png" />
-  <link rel="stylesheet" href="./assets/css/theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" />
+  <link rel="stylesheet" href="./assets/css/theme.min.css" />
+  <style>
+    .navbar {
+      backdrop-filter: blur(1rem);
+    }
+
+    img[src$=".svg"] {
+      width: 2em;
+      height: 2em;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
 </head>
 
 <body>
   <main class="main" id="top">
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block"
-      data-navbar-on-scroll="data-navbar-on-scroll">
+      class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="./">
+        <a class="navbar-brand" href="./" data-bs-toggle="tooltip" title="Sistema Integral para Panaderías">
           <img src="assets/img/logo.png" height="64" />
         </a>
         <button
@@ -26,59 +40,56 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+          class="collapse navbar-collapse"
           id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-            <li class="nav-item px-3 px-xl-4">
-              <a class="nav-link fw-medium" href="#service">Service</a>
+          <hr class="d-lg-none" />
+          <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+            <li>
+              <a class="nav-link" href="#service">Service</a>
             </li>
-            <li class="nav-item px-3 px-xl-4">
-              <a class="nav-link fw-medium" href="#destination">Destination</a>
+            <li>
+              <a class="nav-link" href="#destination">Destination</a>
             </li>
-            <li class="nav-item px-3 px-xl-4">
-              <a class="nav-link fw-medium" href="#booking">Booking</a>
+            <li>
+              <a class="nav-link" href="#booking">Booking</a>
             </li>
-            <li class="nav-item px-3 px-xl-4">
-              <a class="nav-link fw-medium" href="#testimonial">Testimonial</a>
+            <li>
+              <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
-            <li class="nav-item px-3 px-xl-4">
-              <a
-                class="btn btn-outline-dark order-1 order-lg-0 fw-medium"
-                href="./ingresar">
-                Iniciar sesión
-              </a>
+            <li>
+              <div class="btn-group">
+                <a
+                  class="btn btn-outline-dark"
+                  href="./ingresar">
+                  Iniciar sesión
+                </a>
+                <a
+                  class="btn btn-outline-dark"
+                  href="./registrarse">
+                  Registrarse
+                </a>
+              </div>
             </li>
-            <li class="nav-item px-3 px-xl-4">
-              <a
-                class="btn btn-outline-dark order-1 order-lg-0 fw-medium"
-                href="./registro">
-                Registrarse
-              </a>
-            </li>
-            <!-- <li class="nav-item px-3 px-xl-4">
-              <a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">
-                Sign Up
-              </a>
-            </li> -->
-            <!-- <li class="nav-item dropdown px-3 px-lg-0">
-              <a
-                class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium"
-                href="#"
-                id="navbarDropdown"
+            <li class="dropdown">
+              <button
+                class="nav-link btn btn-link dropdown-toggle d-flex align-items-center"
                 data-bs-toggle="dropdown">
-                EN
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end border-0 shadow-lg"
-                style="border-radius:0.3rem;">
+                <div
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="left"
+                  title="Cambiar idioma">
+                  <img src="./assets/img/icons/venezuela.svg" class="img-fluid" />
+                </div>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg p-0 rounded-1 overflow-hidden">
                 <li>
-                  <a class="dropdown-item" href="#!">EN</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#!">BN</a>
+                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:">
+                    <img src="./assets/img/icons/venezuela.svg" />
+                    Español
+                  </a>
                 </li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -196,16 +207,13 @@
     </div>
   </main>
 
-  <script src="./assets/vendors/@popperjs/popper.min.js"></script>
-  <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="./assets/vendors/is/is.min.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./assets/vendors/fontawesome/all.min.js"></script>
-  <script src="./assets/js/theme.js"></script>
-
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" />
+  <script>
+    for (const node of document.querySelectorAll('[data-bs-toggle="tooltip"]')) {
+      new bootstrap.Tooltip(node)
+    }
+  </script>
 </body>
 
 </html>

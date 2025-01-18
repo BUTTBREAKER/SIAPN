@@ -3,7 +3,7 @@
 use SIPAN\App;
 use SIPAN\Controllers\LandingController;
 use SIPAN\Controllers\LoginController;
-use SIPAN\Controllers\RegistroController;
+use SIPAN\Controllers\RegisterController;
 use SIPAN\Middlewares\EnsureUserIsLoggedMiddleware;
 use SIPAN\Middlewares\EnsureUserIsNotLoggedMiddleware;
 
@@ -17,9 +17,9 @@ App::group('/ingresar', function (): void {
 }, [EnsureUserIsNotLoggedMiddleware::class]);
 
 // Grupo para el registro (público)
-App::group('/registro', function (): void {
-  App::route('GET /', [RegistroController::class, 'mostrarFormulario']);
-  App::route('POST /', [RegistroController::class, 'procesarRegistro']);
+App::group('/registrarse', function (): void {
+  App::route('GET /', [RegisterController::class, 'showRegister']);
+  App::route('POST /', [RegisterController::class, 'handleRegister']);
 });
 
 // Grupo para rutas protegidas por login
