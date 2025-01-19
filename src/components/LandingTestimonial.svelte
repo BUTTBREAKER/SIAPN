@@ -47,7 +47,7 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
-            {#each Object.keys(authors) as index}
+            {#each Object.keys(authors).map(Number) as index}
               <button
                 class:active={!index}
                 type="button"

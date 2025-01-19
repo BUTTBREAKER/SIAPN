@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-routing";
   import logo from "@/assets/images/logo.png";
   import venezuelanIcon from "@/assets/images/icons/venezuela.svg";
 </script>
@@ -37,12 +38,12 @@
         </li>
         <li>
           <div class="btn-group">
-            <a class="btn btn-outline-dark" href="./ingresar">
+            <Link class="btn btn-outline-dark" to="/ingresar">
               Iniciar sesión
-            </a>
-            <a class="btn btn-outline-dark" href="./registrarse">
+            </Link>
+            <Link class="btn btn-outline-dark" to="/registrarse">
               Registrarse
-            </a>
+            </Link>
           </div>
         </li>
         <li class="dropdown">
