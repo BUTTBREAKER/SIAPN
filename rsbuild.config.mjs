@@ -12,7 +12,7 @@ export default defineConfig({
         assetPrefix: "./dist/",
       },
       html: {
-        title: "<?= $title ?? 'SIPAN' ?>",
+        title: '<?= is_string($title) ? "$title ~ SIPAN" : "SIPAN" ?>',
         tags: [
           {
             tag: "base",
