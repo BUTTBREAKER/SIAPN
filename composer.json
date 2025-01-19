@@ -2,7 +2,7 @@
   "require": {
     "php": ">=8.2",
     "flightphp/core": "^3.13",
-    "illuminate/container": "^11.30"
+    "illuminate/container": "^11.38"
   },
   "autoload": {
     "psr-4": {
@@ -24,7 +24,7 @@
     "setup": "php -r \"if (!file_exists('.env.php')) copy('.env.example.php', '.env.php');\""
   },
   "require-dev": {
-    "symfony/var-dumper": "^7.1"
+    "symfony/var-dumper": "^7.2"
   },
   "archive": {
     "name": "SIPAN",
