@@ -13,7 +13,9 @@
     "dev": [
       "Composer\\Config::disableProcessTimeout",
       "composer setup",
-      "php -S localhost:80"
+      "start php -S localhost:61001",
+      "start npm run build:watch -- --environment php",
+      "start http://localhost:61001"
     ],
     "build": [
       "composer i --no-dev -o",

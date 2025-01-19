@@ -5,7 +5,7 @@
   import Login from "@/pages/Login.svelte";
 </script>
 
-<Router>
+<Router basepath={document.querySelector("base").getAttribute("href")}>
   <Route path="/" component={Landing} />
   <Route path="/ingresar" component={Login} />
   <Route path="/registrarse" component={Register} />

@@ -6,14 +6,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <div class="container">
-    <a
+    <Link
       class="navbar-brand"
-      href="./"
+      to="./"
       data-bs-toggle="tooltip"
       title="Sistema Integral para Panaderías"
     >
       <img src={logo} height="64" />
-    </a>
+    </Link>
     <button
       class="navbar-toggler"
       data-bs-toggle="collapse"

@@ -17,3 +17,6 @@ $container->singleton(PDO::class, static fn (): PDO => new PDO(
 ));
 
 App::registerContainerHandler([$container, 'get']);
+App::set('flight.views.path', __DIR__ . '/../dist');
+App::set('flight.views.extension', '.html');
+

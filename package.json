@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "rsbuild dev",
-    "build": "rsbuild build"
+    "build": "rsbuild build",
+    "build:watch": "rsbuild build -w"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
