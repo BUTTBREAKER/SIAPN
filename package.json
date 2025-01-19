@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "rsbuild dev",
+    "dev": "rsbuild dev --open --environment dev",
     "build": "rsbuild build",
     "build:watch": "rsbuild build -w"
   },

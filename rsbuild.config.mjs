@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [pluginSvelte()],
   html: {
     title: "SIPAN",
+    template: "src/template.html",
   },
   environments: {
     php: {
@@ -24,5 +25,6 @@ export default defineConfig({
         ],
       },
     },
+    dev: {},
   },
 });
