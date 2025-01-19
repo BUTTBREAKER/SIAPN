@@ -1,0 +1,11 @@
+.text-smallcaps {
+  font-variant: small-caps;
+}
+
+.text-superscript {
+  vertical-align: super;
+}
+
+.text-word-break {
+  word-break: break-word;
+}

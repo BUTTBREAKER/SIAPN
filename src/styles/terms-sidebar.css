@@ -1,0 +1,43 @@
+.icon {
+  padding: 1rem;
+  border-radius: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgba(255, 254, 254, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 254, 254, 0.3);
+}
+
+.icon-primary {
+  color: #F1A501;
+}
+
+.icon-secondary {
+  color: #5E6282;
+}
+
+.icon-success {
+  color: #79B93C;
+}
+
+.icon-info {
+  color: #006380;
+}
+
+.icon-warning {
+  color: #F1A501;
+}
+
+.icon-danger {
+  color: #DF6951;
+}
+
+.icon-light {
+  color: #F0F4F9;
+}
+
+.icon-dark {
+  color: #212832;
+}

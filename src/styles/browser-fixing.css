@@ -1,0 +1,7 @@
+.firefox .dropcap:first-letter {
+  margin-top: 0.175em;
+}
+
+.chrome .btn-close {
+  background-clip: unset;
+}

@@ -1,0 +1,9 @@
+.fs-error {
+  font-size: 7rem;
+}
+
+@media (min-width: 576px) {
+  .fs-error {
+    font-size: 10rem;
+  }
+}

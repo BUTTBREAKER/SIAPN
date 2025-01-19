@@ -1,4 +1,7 @@
-vendor
+/vendor/
 .env.php
 *.tar
 *.sublime-*
+/node_modules/
+package-lock.json
+pnpm-lock.*

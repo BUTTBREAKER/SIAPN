@@ -1,0 +1,411 @@
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  position: relative;
+}
+
+.all-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Flex                                    */
+/* -------------------------------------------------------------------------- */
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-between-center {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-end-center {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.link-black {
+  color: #000 !important;
+}
+
+.link-black:hover,
+.link-black:focus {
+  color: #262626 !important;
+}
+
+.link-100 {
+  color: #FCFCFC !important;
+}
+
+.link-100:hover,
+.link-100:focus {
+  color: white !important;
+}
+
+.link-200 {
+  color: #F5F5F5 !important;
+}
+
+.link-200:hover,
+.link-200:focus {
+  color: white !important;
+}
+
+.link-300 {
+  color: #EEEEEE !important;
+}
+
+.link-300:hover,
+.link-300:focus {
+  color: white !important;
+}
+
+.link-400 {
+  color: #E0E0E0 !important;
+}
+
+.link-400:hover,
+.link-400:focus {
+  color: white !important;
+}
+
+.link-500 {
+  color: #BDBDBD !important;
+}
+
+.link-500:hover,
+.link-500:focus {
+  color: #e3e3e3 !important;
+}
+
+.link-600 {
+  color: #F0F4F9 !important;
+}
+
+.link-600:hover,
+.link-600:focus {
+  color: white !important;
+}
+
+.link-700 {
+  color: #757575 !important;
+}
+
+.link-700:hover,
+.link-700:focus {
+  color: #9b9b9b !important;
+}
+
+.link-800 {
+  color: #616161 !important;
+}
+
+.link-800:hover,
+.link-800:focus {
+  color: #878787 !important;
+}
+
+.link-900 {
+  color: #5E6282 !important;
+}
+
+.link-900:hover,
+.link-900:focus {
+  color: #F1A501 !important;
+}
+
+.link-1000 {
+  color: #212832 !important;
+}
+
+.link-1000:hover,
+.link-1000:focus {
+  color: #3f4d60 !important;
+}
+
+.link-white {
+  color: #FFFEFE !important;
+}
+
+.link-white:hover,
+.link-white:focus {
+  color: white !important;
+}
+
+.hover-top-shadow {
+  -webkit-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.hover-top-shadow.hover-top-shadow-lg:hover,
+.hover-top-shadow.hover-top-shadow-lg:focus {
+  -webkit-transform: translateY(-0.3125rem) translateZ(0);
+  transform: translateY(-0.3125rem) translateZ(0);
+}
+
+.hover-top-shadow:hover,
+.hover-top-shadow:focus {
+  -webkit-transform: translateY(-0.125rem) translateZ(0);
+  transform: translateY(-0.125rem) translateZ(0);
+  -webkit-box-shadow: 0 0 0.5rem 0 rgba(241, 165, 1, 0.8) !important;
+  box-shadow: 0 0 0.5rem 0 rgba(241, 165, 1, 0.8) !important;
+}
+
+.shadow-transition {
+  -webkit-box-shadow: 0 1.5625rem 2.8125rem rgba(94, 98, 130, 0.075);
+  box-shadow: 0 1.5625rem 2.8125rem rgba(94, 98, 130, 0.075);
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+
+.shadow-warning {
+  -webkit-box-shadow: 0 0 3rem 0 rgba(241, 165, 1, 0.3) !important;
+  box-shadow: 0 0 3rem 0 rgba(241, 165, 1, 0.3) !important;
+}
+
+.shadow-icon {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(241, 165, 1, 0.3));
+  filter: drop-shadow(5px 5px 5px rgba(241, 165, 1, 0.3));
+}
+
+.shadow-primary {
+  -webkit-box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+}
+
+/*-----------------------------------------------
+|   Icons group
+-----------------------------------------------*/
+.icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-group .icon-item:not(:last-child) {
+  margin-right: 1.8rem;
+}
+
+.icon-item {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #080809;
+  background-color: #EEEEEE;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0;
+  font-size: 0.875rem;
+}
+
+.icon-item#facebook {
+  background: #FFFEFE;
+}
+
+.icon-item#facebook:hover,
+.icon-item#facebook:focus {
+  background-color: #3c5a99;
+}
+
+.icon-item#instagram {
+  background: #FFFEFE;
+}
+
+.icon-item#instagram:hover,
+.icon-item#instagram:focus {
+  background-image: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+}
+
+.icon-item#twitter {
+  background: #FFFEFE;
+}
+
+.icon-item#twitter:hover,
+.icon-item#twitter:focus {
+  background-color: #1da1f2;
+}
+
+.icon-item:hover,
+.icon-item:focus {
+  color: #FFFEFE;
+}
+
+.icon-item.icon-item-sm {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.icon-item.icon-item-lg {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.fontawesome-i2svg-active .icon-indicator {
+  opacity: 1;
+}
+
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+/*-----------------------------------------------
+|   Sidebar
+-----------------------------------------------*/
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1020;
+  top: 5.3125rem;
+}
+
+/*-----------------------------------------------
+|   Custom circle
+-----------------------------------------------*/
+.circle-dashed {
+  border: 1px dashed #F1A501;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/*-----------------------------------------------
+|   Miscellaneous
+-----------------------------------------------*/
+.hover-text-decoration-none:hover,
+.hover-text-decoration-none:focus {
+  text-decoration: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.collapsed .collapse-icon {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.collapse-icon {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+[data-dismiss="dropdown"] *,
+[data-offset-top] *,
+[data-toggle="collapse"] *,
+[data-toggle="tooltip"] *,
+[data-toggle="popover"] * {
+  pointer-events: none;
+}
+
+/*-----------------------------------------------
+|   Outline
+-----------------------------------------------*/
+.outline-none {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.outline-none:hover,
+.outline-none:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*-----------------------------------------------
+|   Vertical Line (used in kanban header)
+-----------------------------------------------*/
+.vertical-line:after {
+  position: absolute;
+  content: "";
+  height: 75%;
+  width: 1px;
+  background: #EEEEEE;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-line.vertical-line-400:after {
+  background-color: #E0E0E0;
+}
