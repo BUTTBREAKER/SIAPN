@@ -34,7 +34,7 @@
 <section class="pt-5 pt-md-9" id="service">
   <div class="container">
     <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
-      <img src={shape} style:max-width={200} />
+      <img src={shape} alt="Borde" style:max-width={200} />
     </div>
     <div class="mb-7 text-center">
       <h5 class="text-secondary">FUNCIONALIDADES</h5>
@@ -49,7 +49,7 @@
             class="card service-card shadow-hover rounded-3 text-center align-items-center"
           >
             <div class="card-body p-xxl-5 p-4">
-              <img src={category.imageUrl} width={75} />
+              <img src={category.imageUrl} width={75} alt={category.title} />
               <h4 class="mb-3">{category.title}</h4>
               <p class="mb-0 fw-medium">{category.description}</p>
             </div>

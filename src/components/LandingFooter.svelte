@@ -10,7 +10,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
-        <img class="mb-4" src={logo} width="150" />
+        <img class="mb-4" src={logo} width="150" alt="Logo de SIPAN" />
         <p class="fs--1 text-secondary mb-0 fw-medium">
           Book your trip in minute, get full Control for much longer.
         </p>
@@ -112,10 +112,14 @@
         </h4>
         <div class="d-flex align-items-center">
           <a href="#!">
-            <img class="me-2" src={playStore} />
+            <img
+              class="me-2"
+              src={playStore}
+              alt="Disponible en la PlayStore"
+            />
           </a>
           <a href="#!">
-            <img src={appleStore} />
+            <img src={appleStore} alt="Disponible en la AppStore" />
           </a>
         </div>
       </div>

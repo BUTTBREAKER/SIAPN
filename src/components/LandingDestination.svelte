@@ -28,7 +28,7 @@
     <div
       class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
     >
-      <img src={shape} />
+      <img src={shape} alt="Borde" />
     </div>
     <div class="mb-7 text-center">
       <h5 class="text-secondary">BENEFICIOS</h5>
