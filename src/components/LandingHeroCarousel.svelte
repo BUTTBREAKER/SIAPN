@@ -13,8 +13,12 @@
 >
   <div class="carousel-inner">
     {#each heroImages as heroImage, index}
-      <div class="carousel-item" class:active={!index} data-bs-interval={5}>
-        <img class="pt-7 pt-md-0 hero-img d-block w-100" src={heroImage} />
+      <div class="carousel-item" class:active={!index} data-bs-interval={20}>
+        <img
+          class="pt-7 pt-md-0 hero-img d-block w-100"
+          src={heroImage}
+          alt="Chef"
+        />
       </div>
     {/each}
   </div>
@@ -56,14 +60,7 @@
 
   /* Optimización para evitar parpadeos */
   .carousel {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 </style>

@@ -2,6 +2,7 @@
   import { Link } from "svelte-routing";
   import logo from "@/assets/images/logo.png";
   import venezuelanIcon from "@/assets/images/icons/venezuela.svg";
+  import LanguageSwitcher from "./LanguageSwitcher.svelte";
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -12,7 +13,7 @@
       data-bs-toggle="tooltip"
       title="Sistema Integral para Panaderías"
     >
-      <img src={logo} height="64" />
+      <img src={logo} height="64" alt="Logo de SIPAN" />
     </Link>
     <button
       class="navbar-toggler"
@@ -46,32 +47,8 @@
             </Link>
           </div>
         </li>
-        <li class="dropdown">
-          <button
-            class="nav-link btn btn-link dropdown-toggle d-flex align-items-center"
-            data-bs-toggle="dropdown"
-          >
-            <div
-              data-bs-toggle="tooltip"
-              data-bs-placement="left"
-              title="Cambiar idioma"
-            >
-              <img src={venezuelanIcon} class="img-fluid" />
-            </div>
-          </button>
-          <ul
-            class="dropdown-menu dropdown-menu-end border-0 shadow-lg p-0 rounded-1 overflow-hidden"
-          >
-            <li>
-              <a
-                class="dropdown-item d-flex align-items-center gap-3"
-                href="javascript:"
-              >
-                <img src={venezuelanIcon} />
-                Español
-              </a>
-            </li>
-          </ul>
+        <li>
+          <LanguageSwitcher />
         </li>
       </ul>
     </div>
