@@ -1,8 +1,8 @@
 {
   "require": {
-    "php": ">=8.2",
+    "php": "^8.2",
     "flightphp/core": "^3.13",
-    "illuminate/container": "^11.30"
+    "illuminate/container": "^11.42"
   },
   "autoload": {
     "psr-4": {
@@ -19,10 +19,16 @@
       "composer i --no-dev -o",
       "composer archive"
     ],
-    "setup": "php -r \"if (!file_exists('.env.php')) copy('.env.example.php', '.env.php');\""
+    "setup": "php -r \"if (!file_exists('.env.php')) copy('.env.example.php', '.env.php');\"",
+    "pre-install-cmd": [
+      "composer check-platform-reqs"
+    ],
+    "pre-update-cmd": [
+      "composer check-platform-reqs"
+    ]
   },
   "require-dev": {
-    "symfony/var-dumper": "^7.1"
+    "symfony/var-dumper": "^7.2"
   },
   "archive": {
     "name": "SIPAN",
